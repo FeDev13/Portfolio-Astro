@@ -1,46 +1,66 @@
---- 
-import Header from '../components/Header.astro'
+---
+import Header from "../components/Header.astro";
+import { SEO } from "astro-seo";
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body class=" bg-slate-900">
-		<Header/>
-		<main>
-			<slot />
-		</main>
-		<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-	</body>
+  <head>
+    <SEO
+      title="Federico Robledo Portfolio"
+      description="Portfolio belonging to Federico Robledo, a fullstack developer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-slate-900">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+  </body><style is:global>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+    :root {
+      --accent: 136, 58, 234;
+      --accent-light: 224, 204, 250;
+      --accent-dark: 49, 10, 101;
+      --accent-gradient: linear-gradient(
+        45deg,
+        rgb(var(--accent)),
+        rgb(var(--accent-light)) 30%,
+        white 60%
+      );
+    }
+    html {
+      font-family: "Outfit", sans-serif;
+      background: black;
+      background-size: 224px;
+      color: white;
+    }
+    code {
+      font-family:
+        Outfit,
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+    }
+  </style>
 </html>
-<style is:global>
-	@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), rgb(var(--accent-light)) 30%, white 60%);
-	}
-	html {
-		font-family: "Outfit", sans-serif;
-		background: black;
-		background-size: 224px;
-		color: white;
-	}
-	code {
-		font-family: Outfit, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
