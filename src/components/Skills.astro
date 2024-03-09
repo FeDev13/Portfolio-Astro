@@ -1,9 +1,9 @@
 <div class="p-8">
   <section
-    class="text-3xl rounded-xl text-center w-1/2 md:w-full xl:w-1/2 mx-auto drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+    class="text-3xl rounded-xl text-center md:w-full xl:w-1/2 mx-auto drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
   >
-    <h3 class="text-3xl font-bold">Skills</h3>
-    <div class="flex flex-wrap border-neutral-50z p-8">
+    <h3 class="text-4xl font-bold">Skills</h3>
+    <div class="flex flex-wrap border-neutral-50z p-8" id="pulse-container">
       <img
         class="w-[30%] h-[30%] md:w-[10%] md:h-[10%] mx-auto"
         src="../../assets/html-5.png"
@@ -39,10 +39,35 @@
         src="../../assets/angulart.png"
         alt=""
       />
+      <img
+        class="w-[30%] h-[30%] md:w-[10%] md:h-[10%] mx-auto"
+        src="../../assets/gitnew.png"
+        alt=""
+      />
     </div>
   </section>
 </div>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+  @keyframes pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  #pulse-container {
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+
+    margin: 50px;
+    animation: pulse 3s 2;
+    padding: 8;
+  }
 </style>

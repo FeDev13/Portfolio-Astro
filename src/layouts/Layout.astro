@@ -31,28 +31,33 @@ const { title } = Astro.props;
       is:inline
       src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
     ></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+    ></script>
+
+    <style is:global>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: "Outfit", sans-serif;
+        background: black;
+        background-size: 224px;
+        color: white;
+      }
+      code {
+        font-family: "Outfit", sans-serif;
+      }
+    </style>
   </body>
-  <style is:global>
-    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap");
-    :root {
-      --accent: 136, 58, 234;
-      --accent-light: 224, 204, 250;
-      --accent-dark: 49, 10, 101;
-      --accent-gradient: linear-gradient(
-        45deg,
-        rgb(var(--accent)),
-        rgb(var(--accent-light)) 30%,
-        white 60%
-      );
-    }
-    html {
-      font-family: "Outfit", sans-serif;
-      background: black;
-      background-size: 224px;
-      color: white;
-    }
-    code {
-      font-family: "Outfit", sans-serif;
-    }
-  </style>
 </html>
