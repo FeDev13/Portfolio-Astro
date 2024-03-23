@@ -1,4 +1,5 @@
 ---
+import i18next, { t } from "i18next";
 import Translator from "./Translator.astro";
 import EstudioSoria from "./EstudioSoria.astro";
 import GuitarShop from "./GuitarShop.astro";
@@ -8,38 +9,66 @@ import Kytoslanding from "./Kytoslanding.astro";
 import Kytosweb from "./Kytosweb.astro";
 ---
 
-<div x-data="{activeTab: 'personales'}" class="w-full mx-auto text-center mt-0">
-  <h1 class="text-4xl font-bold my-32">Proyectos</h1>
-  <div
-    class="grid grid-cols-1 items-center justify-center my-5 w-1/2 lg:w-[10%] mx-auto"
-  >
+<div
+  x-data="{ activeTab: 'none', slideIn: false }"
+  x-cloak
+  class="w-full mx-auto text-center mt-0"
+>
+  <h1 class="text-4xl font-bold my-32">{t("projects.title")}</h1>
+  <div class="flex my-5 text-center justify-around w-1/2 lg:w-[30%] mx-auto">
     <button
       class="bg-slate-800 rounded-lg p-3 mt-8 text-white text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+      :class="{ 'active-button': activeTab === 'personales' }"
       aria-label="Boton proyectos personales"
-      @click="activeTab = 'personales'">Personales</button
+      @click="activeTab = 'personales'; slideIn = true"
+      >{t("projects.personal")}</button
     >
     <button
       class="bg-slate-800 rounded-lg p-3 mt-8 text-white-400 text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+      :class="{ 'active-button': activeTab === 'laborales' }"
       aria-label="Boton proyectos laborales"
-      @click="activeTab = 'laborales'">Laborales</button
+      @click="activeTab = 'laborales'; slideIn = true"
+      >{t("projects.pro")}</button
     >
   </div>
 
   <div
     class="grid xl:grid-cols-2 gap-2 px-52 items-center justify-center"
     x-show="activeTab === 'personales'"
+    :class="{ 'slide-in': slideIn }"
   >
     <Translator />
     <GuitarShop />
     <Ebook />
     <TodoList />
   </div>
+
   <div
     class="grid xl:grid-cols-2 gap-2 px-52 items-center justify-center"
     x-show="activeTab === 'laborales'"
+    :class="{ 'slide-in': slideIn }"
   >
     <Kytosweb />
     <EstudioSoria />
     <Kytoslanding />
   </div>
 </div>
+
+<style>
+  .active-button {
+    background-color: rgb(49, 196, 141);
+    color: black;
+  }
+  .slide-in {
+    animation: slideInAnimation 0.5s ease-in-out;
+  }
+
+  @keyframes slideInAnimation {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+</style>

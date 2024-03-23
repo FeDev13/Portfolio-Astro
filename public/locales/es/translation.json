@@ -1,0 +1,27 @@
+{
+    "about": {
+      "button": "Descargar CV"
+    },
+    "projects": {
+      "title": "Projectos",
+      "personal": "Personales",
+      "pro": "Laborales"
+    },
+    "header": {
+      "projects": "projects",
+      "habilidades": "habilidades",
+      "Acerca": "acerca de mi"
+    },
+    "footer": {
+      "head": "Trabajemos",
+      "subhead": "juntos",
+      "placeholderName": "Nombre",
+      "query": "Consulta?",
+      "submit": "Enviar"
+    },
+    "project": {
+      "beleriand": "Proyecto didactico que simula una libreria online, desarrollado principalmente para implementar php como lenguaje de backend. Creado con html, tailwind y php. Posee features de CRUD de usuarios, productos y permisos de administrador",
+      "soria": "Landing page para el estudio juridico Soria & asoc.",
+      "guitar": "Proyecto didactico que simula un ecommerce, desarrollado en React en FrontEnd y Node para el Backend, usando MongoDb como DB."
+    }
+  }

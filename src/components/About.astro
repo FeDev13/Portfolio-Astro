@@ -1,3 +1,8 @@
+---
+import i18next, { t } from "i18next";
+import { Trans, HeadHrefLangs } from "astro-i18next/components";
+---
+
 <div
   class="grid grid-cols-1 my-8 px-40 items-center justify-center mt-20 bg-slate-900 xl:flex xl:flex-row"
 >
@@ -7,7 +12,7 @@
       aria-label="Descargar CV"
       class="bg-green-400 rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom"
     >
-      <a download=""> Descargar CV</a>
+      <a download="">{t("about.button")}</a>
     </button>
   </div>
   <div

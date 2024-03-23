@@ -1,0 +1,28 @@
+
+{
+  "about": {
+    "button": "Download resume"
+  },
+  "projects": {
+    "title": "Projects",
+    "personal": "Hobby",
+    "pro": "Professional"
+  },
+  "header": {
+    "projects": "projects",
+    "habilidades": "skills",
+    "Acerca": "about me"
+  },
+  "footer": {
+    "head": "Let's work",
+    "subhead": "together",
+    "placeholderName": "Name",
+    "query": "How can I help?",
+    "submit": "Send"
+  },
+  "project": {
+    "beleriand": "Didactic project that simulates an online bookstore, primarily developed to implement PHP as the backend language. Created with HTML, Tailwind, and PHP. It features CRUD (Create, Read, Update, Delete) operations for users, products, and administrator permissions.",
+    "soria": "Landing page created for Soria Attorney at Law law firm",
+    "guitar": "Didactic project that simulates an e-commerce platform, developed in React for the FrontEnd and Node for the Backend, using MongoDB as the database."
+  }
+}

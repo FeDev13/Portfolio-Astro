@@ -1,7 +1,12 @@
+---
+import i18next, { t } from "i18next";
+---
+
 <footer class="bg-slate-900 font-custom">
   <div class="py-10 px-5 m-auto w-full mt-10">
     <div class="text-3xl mb-6 text-center font-bold">
-      <span class="text-green-500">Trabajemos</span> juntos!
+      <span class="text-green-500">{t("footer.head") + " "}</span>
+      {t("footer.subhead")}!
     </div>
     <div class="flex flex-col-reverse md:flex-row items-center">
       <div class="w-[50%]">
@@ -64,7 +69,7 @@
           <input
             type="text"
             class="border-solid border-green-500 border-6 p-3 md:text-xl w-full rounded-md"
-            placeholder="Nombre"
+            placeholder={t("footer.placeholderName")}
           />
         </div>
 
@@ -81,7 +86,7 @@
             cols="30"
             rows="8"
             class="border-solid border-green-500 border-6 p-3 md:text-xl w-full rounded-md"
-            placeholder="Consulta"></textarea>
+            placeholder={t("footer.query")}></textarea>
         </div>
 
         <div class="col-span-2 text-right">
@@ -89,7 +94,7 @@
             aria-label="Enviar consulta"
             class="py-3 px-6 bg-green-400 text-slate-900 font-bold w-full sm:w-32 rounded-lg"
           >
-            Enviar
+            {t("footer.submit")}
           </button>
         </div>
       </form>
