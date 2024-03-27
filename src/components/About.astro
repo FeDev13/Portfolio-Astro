@@ -4,7 +4,7 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
 ---
 
 <div
-  class="grid grid-cols-1 my-8 px-40 items-center justify-center mt-20 bg-slate-900 xl:flex xl:flex-row"
+  class="grid grid-cols-1 my-8 px-10 xl:px-40 items-center justify-center mt-20 bg-slate-900 xl:flex xl:flex-row"
 >
   <div class="py-9 m-auto text-center">
     <img src="assets/oie_jpg.png" alt="imagen de perfil" class="rounded-full" />
@@ -12,7 +12,10 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
       aria-label="Descargar CV"
       class="bg-green-400 rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom"
     >
-      <a download="">{t("about.button")}</a>
+      <a
+        href="https://mega.nz/file/Opg0VaBR#PktH0cQ0TZo_6H-JCxTVOetjgEdnGjsQJHSHJkVVVAs"
+        download="federicorobledoCV.pdf">{t("about.button")}</a
+      >
     </button>
   </div>
   <div
