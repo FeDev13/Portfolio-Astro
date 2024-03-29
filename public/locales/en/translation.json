@@ -1,6 +1,7 @@
 
 {
   "about": {
+    "me": "In my previous background I was used to solving problems everyday. When I started to learn programming I found out that dealing with algoritms also involved analizing a problem and finding out the best possible solution. That's why programming is so fun to me and I try to reflect this in every single proyect I'm in. Also I'm a Front End developer but I can do Back End if it's needed.",
     "button": "Download resume"
   },
   "projects": {
@@ -23,6 +24,8 @@
   "project": {
     "beleriand": "Didactic project that simulates an online bookstore, primarily developed to implement PHP as the backend language. Created with HTML, Tailwind, and PHP. It features CRUD (Create, Read, Update, Delete) operations for users, products, and administrator permissions.",
     "soria": "Landing page created for Soria Attorney at Law law firm",
-    "guitar": "Didactic project that simulates an e-commerce platform, developed in React for the FrontEnd and Node for the Backend, using MongoDB as the database."
+    "guitar": "Didactic project that simulates an e-commerce platform, developed in React for the FrontEnd and Node for the Backend, using MongoDB as the database.",
+    "kytos-landing": "Landing page for Kytos Health Center. Its main features include an online appointment scheduling system for patients and an administrator panel for center staff.",
+    "kytos-patients":"Internal management software intended to keep track of the patients medical records. Developed using MERN stack."
   }
 }

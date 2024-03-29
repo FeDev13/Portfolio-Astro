@@ -1,5 +1,6 @@
 {
     "about": {
+      "me":"En mi background anterior identificaba el problema y lo resolvía. Al descubrir la programación, también noté que los algoritmos implican analizar el problema y encontrar la mejor solución. Es por eso que me divierte tanto, y trato de que se refleje en el codigo/proyecto que esté realizando. Por cierto soy Front End Dev pero también puedo ser Back si las papas queman o ya se quemaron  ",
       "button": "Descargar CV"
     },
     "projects": {
@@ -22,6 +23,8 @@
     "project": {
       "beleriand": "Proyecto didactico que simula una libreria online, desarrollado principalmente para implementar php como lenguaje de backend. Creado con html, tailwind y php. Posee features de CRUD de usuarios, productos y permisos de administrador",
       "soria": "Landing page para el estudio juridico Soria & asoc.",
-      "guitar": "Simulacion de un ecommerce, desarrollado en React en FrontEnd y Node para el Backend, usando MongoDb como DB."
+      "guitar": "Simulacion de un ecommerce, desarrollado en React en FrontEnd y Node para el Backend, usando MongoDb como DB.",
+      "kytos-patients": "Sistema para manejo interno de las historias clinicas de los pacientes del centro. Desarrollado usando el stack MERN",
+      "kytos-landing": "Landing page para el centro de salud Kytos. Como features principales implementa un sistema online de turnos para pacientes y panel de administrador para personal del centro"
     }
   }

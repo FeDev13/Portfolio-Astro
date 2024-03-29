@@ -10,8 +10,9 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
     <img src="assets/oie_jpg.png" alt="imagen de perfil" class="rounded-full" />
     <button
       aria-label="Descargar CV"
-      class="bg-green-400 rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom"
+      class="bg-green-400 flex rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom mx-auto"
     >
+      <img src="../../assets/approved.png" alt="resume icon" class="mx-2" />
       <a
         href="https://mega.nz/file/Opg0VaBR#PktH0cQ0TZo_6H-JCxTVOetjgEdnGjsQJHSHJkVVVAs"
         download="federicorobledoCV.pdf">{t("about.button")}</a
@@ -21,14 +22,22 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
   <div
     class="w-full text-center mt-10 text-xl font-semibold font-custom xl:mx-8"
   >
-    <h1 class="text-5xl">Federico Robledo</h1>
-    <h2 class="text-4xl my-8 text-green-400">Full Stack Developer</h2>
+    <div class="flex justify-center">
+      <img
+        src="../../assets/computer-desktop.png"
+        alt="logo"
+        class="hidden my-auto md:inline-block md:mx-8"
+      />
+      <h1 class="text-5xl">Federico Robledo</h1>
+    </div>
+
+    <h2 class="text-4xl my-8 text-green-400 text-center">
+      Full Stack Developer
+    </h2>
     <p
       class="mt-12 text-left p-8 rounded-md drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)] bg-slate-900 bg-clip-border text-white shadow-lg"
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus rem magnam
-      amet doloribus harum? Molestias, aliquam! Error nisi, veritatis atque eos
-      explicabo voluptates sint debitis, minus nemo iure consequatur architecto.
+      {t("about.me")}
     </p>
   </div>
 </div>

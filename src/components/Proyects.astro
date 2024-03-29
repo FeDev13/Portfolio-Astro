@@ -14,17 +14,27 @@ import Kytosweb from "./Kytosweb.astro";
   x-cloak
   class="w-full mx-auto text-center mt-0"
 >
-  <h1 class="text-4xl font-bold my-32">{t("projects.title")}</h1>
+  <div class="flex justify-center">
+    <img
+      src="../../assets/rocket.png"
+      alt="rocket icon"
+      class="w-[10%] h-[10%] sm:w-[8%] sm:h-[8%] md:w-[4%] md:h-[4%] mx-4 my-auto"
+    />
+    <h1 class="text-4xl font-bold my-32">
+      {t("projects.title")}
+    </h1>
+  </div>
+
   <div class="flex my-5 text-center justify-around w-1/2 lg:w-[30%] mx-auto">
     <button
-      class="bg-slate-800 rounded-lg p-3 mt-8 text-white text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+      class="bg-slate-800 rounded-lg p-3 mt-8 text-white text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)] hover:p-4 transition-all duration-300"
       :class="{ 'active-button': activeTab === 'personales' }"
       aria-label="Boton proyectos personales"
       @click="activeTab = 'personales'; slideIn = true"
       >{t("projects.personal")}</button
     >
     <button
-      class="bg-slate-800 rounded-lg p-3 mt-8 text-white-400 text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)]"
+      class="bg-slate-800 rounded-lg p-3 mt-8 text-white-400 text-xl font-semibold font-custom drop-shadow-[0px_35px_35px_rgba(39,245,131,0.6)] hover:p-4 transition-all duration-300"
       :class="{ 'active-button': activeTab === 'laborales' }"
       aria-label="Boton proyectos laborales"
       @click="activeTab = 'laborales'; slideIn = true"
