@@ -8,43 +8,44 @@ import i18next, { t } from "i18next";
       <span class="text-green-500">{t("footer.head") + " "}</span>
       {t("footer.subhead")}!
     </div>
-
+    <div>
+      <img src="../../assets/arrow.png" alt="down arrow" class="mx-auto" />
+    </div>
     <div class="mt-8">
-      <div class="flex flex-wrap w-1/2 mx-auto justify-between">
-        <a
-          href="https://www.linkedin.com/in/federicorobledo13/"
-          class="py-2 px-2 font-medium text-white"
-        >
-          <i class="fi fi-brands-linkedin" id="linkedin"></i>
-        </a>
-        <a
-          href="https://github.com/FeDev13"
-          class="py-2 px-2 font-medium text-white"
-        >
-          <i class="fi fi-brands-github" id="github"></i>
-        </a>
+      <div class="flex flex-wrap w-1/2 mx-auto justify-around">
+        <input
+          type="text"
+          id="textToCopy"
+          value="fedevfull@gmail.com"
+          class="bg-transparent rounded-md"
+        />
         <a
           href="mailto:fedevfull@gmail.com"
-          class="py-2 px-2 font-medium text-white"
+          aria-label="email"
+          class="my-auto hover:bg-slate-800 p-4 rounded-xl"
         >
           <i class="fi fi-brands-google" id="google"></i>
         </a>
+        <button
+          type="button"
+          id="copyButton"
+          class="bg-transparent hover:bg-slate-800 p-4 rounded-xl"
+        >
+          <img src="../../assets/copy.png" alt="copy" />
+        </button>
+        <div
+          id="customAlert"
+          class="hidden fixed bottom-0 left0 w-full flex items-end justify-center px-4 py-6 sm:items-center sm:px-0 bg-transparent"
+        >
+          <div class="bg-slate-800 p-2 rounded shadow-lg">
+            <p class="text-lg font-semibold text-green-500">Email copiado</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </footer>
 <style>
   @import url("https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css");
-  #linkedin {
-    font-size: 32px;
-  }
-  #github {
-    font-size: 32px;
-  }
-  #google {
-    font-size: 32px;
-  }
-  .icon {
-    margin: auto;
-  }
 </style>
+<script src="../copy.ts"></script>
