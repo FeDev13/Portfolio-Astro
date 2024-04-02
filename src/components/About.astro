@@ -10,11 +10,12 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
     <img src="assets/oie_jpg.png" alt="imagen de perfil" class="rounded-full" />
     <button
       aria-label="Descargar CV"
-      class="bg-green-400 flex rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom mx-auto"
+      class="bg-green-400 flex rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom mx-auto hover:bg-slate-800 hover:text-white transition-colors duration-1000"
     >
       <img src="../../assets/approved.png" alt="resume icon" class="mx-2" />
       <a
         href="https://mega.nz/file/Opg0VaBR#PktH0cQ0TZo_6H-JCxTVOetjgEdnGjsQJHSHJkVVVAs"
+        target="_blank"
         download="federicorobledoCV.pdf">{t("about.button")}</a
       >
     </button>
@@ -22,16 +23,16 @@ import { Trans, HeadHrefLangs } from "astro-i18next/components";
   <div
     class="w-full text-center mt-10 text-xl font-semibold font-custom xl:mx-8"
   >
-    <div class="flex justify-center bg-slate-300">
+    <div>
       <img
         src="../../assets/computer-desktop.png"
         alt="logo"
-        class="hidden my-auto md:inline-block md:mx-8"
+        class="hidden my-auto md:inline-block md:mx-8 ml-auto mb-5"
       />
-      <h1 class="text-5xl">Federico Robledo</h1>
     </div>
+    <h1 class="text-5xl">Federico Robledo</h1>
 
-    <h2 class="text-4xl my-8 text-green-400 text-center">
+    <h2 class="text-3xl my-8 text-green-400 text-center">
       Full Stack Developer
     </h2>
     <p
