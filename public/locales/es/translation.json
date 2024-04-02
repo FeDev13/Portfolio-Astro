@@ -23,7 +23,7 @@
     "project": {
       "beleriand": "Proyecto didactico que simula una libreria online, desarrollado principalmente para implementar php como lenguaje de backend. Creado con html, tailwind y php. Posee features de CRUD de usuarios, productos y permisos de administrador",
       "soria": "Landing page para el estudio juridico Soria & asoc.",
-      "guitar": "Simulacion de un ecommerce, desarrollado en React en FrontEnd y Node para el Backend, usando MongoDb como DB.",
+      "guitar": "Simulacion de un ecommerce, desarrollado en React en FrontEnd y Node",
       "kytos-patients": "Sistema para manejo interno de las historias clinicas de los pacientes del centro. Desarrollado usando el stack MERN",
       "kytos-landing": "Landing page para el centro de salud Kytos. Como features principales implementa un sistema online de turnos para pacientes y panel de administrador para personal del centro"
     }

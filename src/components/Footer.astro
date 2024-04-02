@@ -12,27 +12,30 @@ import i18next, { t } from "i18next";
       <img src="../../assets/arrow.png" alt="down arrow" class="mx-auto" />
     </div>
     <div class="mt-8">
-      <div class="flex flex-wrap w-1/2 mx-auto justify-around">
+      <div class="grid md:flex md:flex-wrap w-1/2 mx-auto justify-around">
         <input
           type="text"
           id="textToCopy"
           value="fedevfull@gmail.com"
-          class="bg-transparent rounded-md"
+          class="bg-transparent rounded-md w-full"
         />
-        <a
-          href="mailto:fedevfull@gmail.com"
-          aria-label="email"
-          class="my-auto hover:bg-slate-800 p-4 rounded-xl"
-        >
-          <i class="fi fi-brands-google" id="google"></i>
-        </a>
-        <button
-          type="button"
-          id="copyButton"
-          class="bg-transparent hover:bg-slate-800 p-4 rounded-xl"
-        >
-          <img src="../../assets/copy.png" alt="copy" />
-        </button>
+        <div class="flex justify-center sm:justify-around w-full mt-8">
+          <a
+            href="mailto:fedevfull@gmail.com"
+            aria-label="email"
+            class="my-auto hover:bg-slate-800 p-4 rounded-xl"
+          >
+            <i class="fi fi-brands-google" id="google"></i>
+          </a>
+          <button
+            type="button"
+            id="copyButton"
+            class="bg-transparent hover:bg-slate-800 p-4 rounded-xl"
+          >
+            <img src="../../assets/copy.png" alt="copy" />
+          </button>
+        </div>
+
         <div
           id="customAlert"
           class="hidden fixed bottom-0 left0 w-full flex items-end justify-center px-4 py-6 sm:items-center sm:px-0 bg-transparent"
