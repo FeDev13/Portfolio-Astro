@@ -1,15 +1,18 @@
 ---
 import i18next, { t } from "i18next";
-
 ---
 
 <div
- x-data="{ showAboutMe: false }"
-  x-cloak 
+  x-data="{ showAboutMe: false }"
+  x-cloak
   class="grid grid-cols-1 my-8 px-10 xl:px-40 items-center justify-center mt-20 bg-slate-900 xl:flex xl:flex-row"
 >
   <div class="py-9 m-auto text-center">
-    <img src="assets/oie_jpg.png" alt="imagen de perfil" class="rounded-full" />
+    <img
+      src="https://ibb.co/ChdcNmy"
+      alt="imagen de perfil"
+      class="rounded-full"
+    />
     <button
       aria-label="Descargar CV"
       class="bg-green-400 flex rounded-lg p-3 mt-8 text-slate-900 text-lg font-semibold font-custom mx-auto hover:bg-slate-800 hover:text-white transition-colors duration-1000"
@@ -38,9 +41,9 @@ import i18next, { t } from "i18next";
       Full Stack Developer
     </h2>
     <button class="mx-auto" @click="showAboutMe = !showAboutMe">
-      <img src="../../assets/book.png" alt="tap">
+      <img src="../../assets/book.png" alt="tap" />
     </button>
-    
+
     <p
       x-show="showAboutMe"
       x-cloak
